@@ -1,0 +1,140 @@
+7. Schedule, Resources, and Risk Feasibility
+7.1 Available Team Time
+The available team time is calculated using the number of students, the estimated weekly contribution of each student, and the number of remaining weeks.
+Available team hours
+Available team hours = Number of members × Hours per member per week × Available weeks
+3 members × 6 hours per week × 9 weeks = 162 hours
+The planned project activities are estimated to require 129 team hours.
+Schedule buffer
+Schedule buffer = Available hours − Planned hours
+162 hours − 129 hours = 33 hours
+The percentage of available time is:
+(129 ÷ 162) × 100 = 79.6%
+The remaining schedule buffer is:
+100% − 79.6% = 20.4%
+The 33-hour buffer will  be used for corrections, technical problems, or missed meetings. This is important because the project contains several connected modules.
+
+7.2 Remaining Project Schedule
+Table 7.1
+ Remaining Project Schedule, Responsibilities, and Dependencies
+Phase and period
+Main work
+Proposed owner
+Estimated team hours
+Dependency
+Milestone and deadline
+Phase 3: 22 Sep.–5 Oct. 2026
+Complete functional and non-functional requirements, business rules, user roles, permissions, and use cases
+Renad leads; all members review
+24
+Completed feasibility study
+Requirements Document, week of 5 Oct.
+Phases 4 and 5: 6–26 Oct. 2026
+Prepare the architecture, database design, interfaces, workflows, UML diagrams, and data-flow diagrams
+Work divided among all three members
+36
+Stable and approved requirements
+Design Document, week of 26 Oct.
+Phase 6 development: 27 Oct.–16 Nov. 2026
+Develop user accounts, asset records, requests, approvals, transfers, maintenance, reporting, and selected AI functions
+Each member develops her assigned modules
+39
+Completed system and database designs
+Draft implementation, week of 16 Nov.
+Phase 6 integration: 27 Oct.–16 Nov. 2026
+Connect the modules and perform unit and integration checks during development
+Renad coordinates; all members test their work
+12
+Working modules and agreed interfaces
+Integrated draft before formal testing
+Phase 7: 17–23 Nov. 2026
+Perform system, workflow, usability, and recommendation-quality tests
+Shaikha coordinates; all members perform tests
+10
+Stable and integrated prototype
+Test cases and results, week of 23 Nov.
+Phase 8 preparation: 10–23 Nov. 2026
+Correct problems and complete the report, presentation, demonstration, and repository
+All three members
+8
+Working prototype and test results
+Final project and demonstration, week of 23 Nov.
+Total planned effort
+
+
+
+
+129 hours
+
+
+
+
+
+Source: Schedule and submission deadlines were adapted from Khalifa University [2, slide 2]. Task ownership and estimated hours were developed by the project team.
+
+The owner of the item in the table is to coordinate (not necessarily do) the task. All three members will review deliverables and assist each other with connecting the various aspects of the system.
+Testing will not be left for Phase 7. In Phase 6, each member will perform tests on functions being developed by her. The last week of testing will involve testing all the way through (workflows), connections, user acceptance, recommendations, fixes, and final demonstration.
+Development of Phase 8 will also start before finishing Phase 7. For example, we could start developing the presentation/report structure, slide deck template, and demonstration plan before the system is completely ready. This is needed because both Phase 7 and 8 have the same deadline.
+7.3 Resource Availability
+The team has the primary resources needed for the prototype, including three personal laptops, internet access, a GitHub repository, programming tools, and free/low-cost database and AI services. No additional hardware resources are anticipated for the project during the semester.
+The GitHub repository will contain the source code, issues, and contributors’ branch commits, representing each member’s project-specific contributions. Development will take place in individual branches, which will be merged after peer reviews.
+Passwords, API tokens, and other private tokens will not be committed to the repository. They will be stored separately and installed in the project with tools that protect configuration data. The team might not be able to obtain actual records of the university’s assets, as such information might contain financial, legal, maintenance, and location details that the university administration might consider confidential. The prototype will be based on sample data, unless the university provides access to actual information.
+The sample data should include records of various types, including assets, departments, users, requests, approvals, transfers, maintenance records, expenses, locations, and changes to assets’ locations and other attributes. It should be noted that such data will be fictional, and the university might ask to replace any realistic data with randomly-generated values.
+The largest resource constraint is the expected learning curve of the technologies to be utilized in the project. The team’s project hours allocation includes 33 hours in the buffer zone for experiments with the technology. 
+
+7.4 Project Risks and Contingency Plans
+Table 7.2
+ Main Schedule and Resource Risks
+Risk
+Likelihood
+Impact
+Planned response
+Contingency plan
+The project scope is too large for three members
+High
+High
+Prioritize essential workflows and stop adding new requirements after Phase 3
+Move advanced AI functions to future work while keeping a working basic system
+Real university asset data is unavailable
+High
+Medium
+Prepare realistic sample records and clearly document the assumptions
+Demonstrate the system using anonymized or generated data
+The team needs more time to learn AI or integration tools
+Medium
+High
+Complete small technical experiments before beginning full implementation
+Use keyword search or rule-based matching if the AI method is not ready
+Modules do not work correctly when connected
+Medium
+High
+Agree on database fields and module interfaces during the design phase
+Use the allocated integration hours and simplify non-essential connections
+An external AI or hosting service becomes unavailable
+Medium
+High
+Set usage limits and keep essential functions independent from the external service
+Continue with manual classification, filters, and ordinary search
+A member becomes unavailable near a deadline
+Medium
+High
+Keep the latest work on GitHub and document important decisions
+Assign another member as a backup and use part of the 33-hour buffer
+Testing identifies serious problems close to submission
+Medium
+High
+Test each function during development instead of waiting until Phase 7
+Correct Must-have functions first and document remaining limitations
+Private or sensitive data is accidentally exposed
+Low
+High
+Use sample data, permissions, and protected configuration files
+Remove the affected data or API key and replace the exposed credentials
+
+Source: Developed by the project team based on the project scope, constraints, expected development activities, and feasibility-study guidance provided by Khalifa University [1], [2].
+
+7.5 Schedule and Resource Feasibility Decision
+The remaining schedule is challenging but acheivble, given the proposed division of work and control of the project scope. Given the estimated number of hours required (129) versus the number of hours worked (162), there is a33-hour (20.4%) surplus.
+The biggest schedule risk is the amount of work allocated for three members due to deliverables tied to testing and final-project submissions in the same week. The risk will be mitigated by starting the integration and some forms of testing during Week 6 instead of waiting till the final week.
+The team will also prioritize essential asset, request, approval, transfer, maintenance, and reporting workflows before advanced AI functions. The latter will only be completed if the essential system is reliable and there is sufficient time.
+With the given assumptions, I conclude that the schedule and resource availability are feasible with reservations. The project can proceed as proposed with weekly progress reviews, early start of testing, and no additional scope expansion beyond the requirements capture phase.
